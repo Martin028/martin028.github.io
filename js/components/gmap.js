@@ -30,13 +30,13 @@ window.initMap = function() {
 
   var customMapTypeId = 'custom_style';
 
-  var brooklyn = {lat: 41.850, lng: -73.961};
+  var boston = {lat: 42.331916, lng: -71.108125};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 6,
     scrollwheel: false,
     streetViewControl: false,
     mapTypeControl: false,
-    center: brooklyn, // Brooklyn.
+    center: boston, // Boston.
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
     }
@@ -47,7 +47,7 @@ window.initMap = function() {
     '</div>'+
     '<h1 id="firstHeading" class="firstHeading">Brooklyn</h1>'+
     '<div id="bodyContent">'+
-    '<p>277 Bedford Avenue, <br> Brooklyn, NY 11211, <br> New York, USA</p>'+
+    '<p>183 Hillside Street, <br> Boston, MA 02120, <br> Massachusetts, USA</p>'+
     '</div>'+
     '</div>';
 
@@ -61,7 +61,7 @@ window.initMap = function() {
     clickable: true,
     icon: image,
     title: 'Brooklyn',
-    position: brooklyn
+    position: boston
   });
 
   marker.addListener('click', function() {
