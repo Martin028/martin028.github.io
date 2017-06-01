@@ -136,8 +136,8 @@
         <div class="content-lg container">
             <div class="row margin-b-20">
             <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Wentworth Institute of Technology</button>
-                <div id="myDropdown" class="dropdown-content">
+                <button onclick="myFunctionWIT()" class="dropbtn">Wentworth Institute of Technology</button>
+                <div id="myDropdownWIT" class="dropdown-contentWIT">
                     <div class="row">
                         <div class="col-sm-7 sm-margin-b-50">
                             <div class="margin-b-30">
@@ -169,8 +169,8 @@
         <div class="content-lg container">
             <div class="row margin-b-20">
             <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Hanover High School</button>
-                <div id="myDropdown" class="dropdown-content">
+                <button onclick="myFunctionHHS()" class="dropbtn">Hanover High School</button>
+                <div id="myDropdownHHS" class="dropdown-contentHHS">
                 <div class="row">
                     <div class="col-sm-7 sm-margin-b-50">
                         <div class="margin-b-30">
@@ -206,8 +206,8 @@
         <div class="content-lg container">
             <div class="row margin-b-20">
             <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Certifications, Skills, Accreditations</button>
-                <div id="myDropdown" class="dropdown-content">
+                <button onclick="myFunctionCER()" class="dropbtn">Certifications, Skills, Accreditations</button>
+                <div id="myDropdownCER" class="dropdown-contentCER">
                     <div class="row">
                         <div class="col-sm-7 sm-margin-b-50">
                             <div class="margin-b-30">
@@ -226,8 +226,8 @@
         <div class="content-lg container">
             <div class="row margin-b-20">
             <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Interests, Hobbies, Extracurriculars</button>
-                <div id="myDropdown" class="dropdown-content">
+                <button onclick="myFunctionInt()" class="dropbtn">Interests, Hobbies, Extracurriculars</button>
+                <div id="myDropdownInt" class="dropdown-contentInt">
                     <div class="row">
                         <div class="col-sm-7 sm-margin-b-50">
                             <div class="margin-b-30">
@@ -243,19 +243,88 @@
             </div>
             </div>
         </div>
-        <!-- Dropdown Script -->
+        <!-- Dropdown Script WIT -->
         <script>
             /* When the user clicks on the button, 
             toggle between hiding and showing the dropdown content */
-                function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
+                function myFunctionWIT() {
+                document.getElementById("myDropdownWIT").classList.toggle("show");
                 }
 
             // Close the dropdown if the user clicks outside of it
             window.onclick = function(event) {
               if (!event.target.matches('.dropbtn')) {
 
-                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var dropdowns = document.getElementsByClassName("dropdown-contentWIT");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+        <!-- Dropdown Script HHS -->
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+                function myFunctionHHS() {
+                document.getElementById("myDropdownHHS").classList.toggle("show");
+                }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-contentHHS");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+        <!-- Dropdown Script Certs -->
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+                function myFunctionCER() {
+                document.getElementById("myDropdownCER").classList.toggle("show");
+                }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-contentCER");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+        <!-- Dropdown Script Interests -->
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+                function myFunctionInt() {
+                document.getElementById("myDropdownInt").classList.toggle("show");
+                }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-contentInt");
                 var i;
                 for (i = 0; i < dropdowns.length; i++) {
                   var openDropdown = dropdowns[i];
