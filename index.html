@@ -285,17 +285,17 @@
                             <!-- End List -->
                         </div>
                         <div class="col-sm-5 sm-margin-b-30">
+                        <h2 class="color-white">Send Me A Note</h2>
                         <form 
                         action="mailto:memartin28@gmail.com"
                         method="POST"
                         enctype="multipart/form-data"
                         name="EmailTestForm"
-                            <h2 class="color-white">Send Me A Note</h2>
-                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Name" required>
-                            <input type="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
-                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Phone" required>
-                            <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Message" required></textarea>
-                            <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
+                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Name" required name="VisitorName">
+                            <input type="email" class="form-control footer-input margin-b-20" placeholder="Email" required name="VisitorEmail">
+                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Phone" required name="VisitorPhone">
+                            <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Message" required name="VisitorComment"></textarea>
+                            <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</input>
                         </form>
                         </div>
                     </div>
