@@ -30,13 +30,13 @@ window.initMap = function() {
 
   var customMapTypeId = 'custom_style';
 
-  var boston = {lat: 42.331916, lng: -71.108125};
+  var Quincy = {lat: 42.236603 , lng: -70.989259};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 6,
     scrollwheel: false,
     streetViewControl: false,
     mapTypeControl: false,
-    center: boston, // Boston.
+    center: Quincy, // Quincy.
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
     }
@@ -45,9 +45,9 @@ window.initMap = function() {
   var contentString = '<div id="content">'+
     '<div id="siteNotice">'+
     '</div>'+
-    '<h1 id="firstHeading" class="firstHeading">Brooklyn</h1>'+
+    '<h1 id="firstHeading" class="firstHeading">Quincy</h1>'+
     '<div id="bodyContent">'+
-    '<p>183 Hillside Street, <br> Boston, MA 02120, <br> Massachusetts, USA</p>'+
+    '<p>500 Falls Boulevard, <br> Quincy, MA 02169 <br> Massachusetts, USA</p>'+
     '</div>'+
     '</div>';
 
@@ -60,8 +60,8 @@ window.initMap = function() {
     map: map,
     clickable: true,
     icon: image,
-    title: 'Brooklyn',
-    position: boston
+    title: 'Quincy',
+    position: quincy
   });
 
   marker.addListener('click', function() {
