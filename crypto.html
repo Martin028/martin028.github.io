@@ -9,7 +9,7 @@
 
 <style>
 body {
-	background-image: url('/pw/grunge_patterns.jpg');
+	background-image: url('/grunge_patterns.jpg');
 	background-attachment: fixed;
 	color: #333;
 }
@@ -79,7 +79,7 @@ div.vertical {
 	function loadPage(pwd) {
 		var hash= pwd;
 		hash= Sha1.hash(pwd);
-		var url= hash + "/44a9713350e53858f058463d4bf7f1e542d9ca4b/crypto.html";
+		var url= hash + "crypto.html";
 		$.ajax({
 			url : url,
 			dataType : "html",
